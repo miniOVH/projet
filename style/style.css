@@ -1,0 +1,65 @@
+/*reglage generale*/
+@font-face {
+    font-family: 'cpolice';
+    src: url('./cpolice.ttf');
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+*{
+    @font-face {
+        font-family:'c2police' ;
+        src: url('./c2police.ttf');
+    }
+}
+body {
+    font-family: 'c2police', sans-serif;
+}
+
+/*header*/
+
+
+#header-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(54, 53, 53);
+    color: rgb(223, 98, 181);
+    margin: 0px;
+    padding : 15px;
+    width: 100vw;
+    height: 23vh;
+
+}
+
+#header-titre{
+   width: 50vw;
+}
+
+#header-login{
+    width: 25vw;
+}
+
+#header-logo {
+    width: 25vw;
+}
+
+h1 {
+    color : rgb(223, 98, 181);
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    font-family: 'cpolice',sans-serif;
+}
+#logo {
+    height:16vh ; 
+}
+
+/*MISE EN FORME DE FORMULAIRE*/
+
+input, label{
+    display: block;
+    margin-top: 3px;
+}

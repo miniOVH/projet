@@ -7,15 +7,19 @@
     margin: 0;
     padding: 0;
     box-sizing:border-box;
+    --color-noir: #0C0C0C ;
+    --color-marron:#481E14;
+    --color-beigefonce:#9B3922;
+    --color-beige:#F2613F ;
 }
 *{
     @font-face {
-        font-family:'c2police' ;
-        src: url('./c2police.ttf');
+    font-family:'c2police' ;
+    src: url('./c2police.ttf');
     }
 }
 body {
-    font-family: 'c2police', sans-serif;
+font-family: 'c2police', sans-serif;
 }
 
 /*header*/
@@ -26,8 +30,8 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: rgb(54, 53, 53);
-    color: rgb(223, 98, 181);
+    background-color:var(--color-noir);
+    color: var(--color-beige);
     margin: 0px;
     padding : 15px;
     width: 100vw;
@@ -37,10 +41,20 @@ body {
 
 #header-titre{
    width: 50vw;
+   display: flex;
+   flex-direction: column ;
+   justify-content:center ;
+   align-items: center ;
+
 }
 
 #header-login{
-    width: 25vw;
+    width: 20vw;
+    border: var(--color-beigefonce) solid 5px ;
+    border-radius: 10px;
+    padding: 5px;
+
+
 }
 
 #header-logo {
@@ -48,18 +62,78 @@ body {
 }
 
 h1 {
-    color : rgb(223, 98, 181);
+    color : var(--color-beige);
     font-size: 2.5rem;
-    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    text-shadow: 1px 1px 2px rgb(238, 255, 0);
     font-family: 'cpolice',sans-serif;
 }
 #logo {
     height:16vh ; 
+    display: block;
 }
-
+/*Banner de fond*/
+#header-bas{
+    width: 100vw;
+    height: 8vh;
+    background-image: url('../asset/book.jpeg');
+    border-top: var(--color-marron) solid 2px;
+    border-bottom: var(--color-marron) solid 2px;
+}
 /*MISE EN FORME DE FORMULAIRE*/
 
 input, label{
     display: block;
     margin-top: 3px;
+    width: 100%;
 }
+
+/*Partie central*/
+#central{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+}
+
+/*Menu*/
+
+nav{
+    width: 20vw;
+    height: 60vh;
+    background-color: var(--color-noir);
+    border-radius: 0 0 15px 15px;
+    box-shadow: var(--color-marron) 2px 2px 5px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.bouton {
+    text-decoration: none;
+    color: var(--color-beige);
+    font-weight: 700;
+    font-size: 1.2rem;
+    display: block;
+    padding: 20px;
+    background-color: var(--color-marron);
+    width: 80%;
+    border-radius: 60%;
+    box-shadow: var(--color-beige) 2px 2px 5px 0;
+    text-align: center;
+    transition: box-shadow 500ms, color 500ms, background-color 100ms;
+
+
+}
+
+.bouton:hover{
+    box-shadow: var(--color-beige) 7px 7px 20px 0;
+    color: var(--color-beige);
+    background-color: var(--color-marron);
+}
+
+/*le choix de site*/
+
+
+/*la selection des site*/
